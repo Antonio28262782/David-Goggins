@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="David Goggins Store - Premium Merchandise. Stay Hard. Uncommon Amongst the Uncommon.">
+    <title>David Goggins Store | Stay Hard</title>
+    <!-- Prevent FOUC (Flash of Unstyled Content) -->
+    <style>
+        body {
+            visibility: hidden;
+            opacity: 0;
+        }
+        body.css-loaded {
+            visibility: visible;
+            opacity: 1;
+            transition: opacity 0.2s ease-in;
+        }
+    </style>
+    <!-- Preload CSS for faster loading -->
+    <link rel="preload" href="css/style.css" as="style">
+    <link rel="preload" href="css/product.css" as="style">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/product.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700;900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">GOGGINS</a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#collections" class="nav-link">Collections</a></li>
+                <li><a href="#bestsellers" class="nav-link">Best Sellers</a></li>
+                <li><a href="#story" class="nav-link">Story</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="cart-btn" id="cartBtn">
+                    <span class="cart-icon">🛒</span>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section 3D -->
+    <section class="hero" id="home">
+        <div class="hero-3d" id="hero3D"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">STAY</span>
+                <span class="title-line title-bold">HARD</span>
+            </h1>
+            <p class="hero-subtitle">Uncommon Amongst the Uncommon</p>
+            <div class="hero-cta">
+                <a href="#collections" class="btn btn-primary">Shop the Merch</a>
+                <a href="#story" class="btn btn-secondary">Discover the Story</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- Best Sellers -->
+    <section class="bestsellers" id="bestsellers">
+        <div class="container">
+            <h2 class="section-title">Best Sellers</h2>
+            <div class="products-grid" id="bestsellersGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection Products -->
+    <section class="collection-products" id="collectionProducts" style="display: none;">
+        <div class="container">
+            <div class="collection-header">
+                <button class="back-to-collections" id="backToCollections">← Back to Collections</button>
+                <h2 class="section-title" id="collectionTitle">Collection</h2>
+            </div>
+            <div class="products-grid" id="collectionProductsGrid">
+                <!-- Products will be loaded dynamically -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Collections -->
+    <section class="collections" id="collections">
+        <div class="container">
+            <h2 class="section-title">Collections</h2>
+            <div class="collections-grid">
+                <div class="collection-card" data-category="tshirts">
+                    <div class="collection-image collection-tshirts">
+                        <img src="assets/images/david-goggins-collection-original.jpg" alt="David Goggins"
+                            class="collection-bg-image">
+                        <div class="collection-overlay">
+                            <h3>T-Shirts</h3>
+                            <p>Premium Quality</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="hoodies">
+                    <div class="collection-image collection-hoodies">
+                        <img src="assets/images/goggins-hoodie-collection.jpg" alt="David Goggins Hoodie"
+                            class="collection-bg-image">
+                        <div class="collection-overlay">
+                            <h3>Hoodies</h3>
+                            <p>Stay Warm, Stay Hard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="collection-card" data-category="accessories">
+                    <div class="collection-image collection-accessories">
+                        <img src="assets/images/goggins-accessories-collection.jpg" alt="David Goggins Accessories"
+                            class="collection-bg-image">
+                        <div class="collection-overlay">
+                            <h3>Accessories</h3>
+                            <p>Complete Your Look</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Story Section -->
+    <section class="story" id="story">
+        <div class="container">
+            <div class="story-content">
+                <div class="story-text">
+                    <h2 class="section-title">The Story</h2>
+                    <p class="story-intro">
+                        David Goggins is a former Navy SEAL, ultra-marathon runner, and motivational speaker.
+                        His journey of personal transformation, from 300 pounds to one of the world's most
+                        enduring athletes, inspires millions of people to push their limits.
+                    </p>
+                    <p class="story-body">
+                        "Stay Hard" is not just a slogan. It's a philosophy of life. It's the daily decision
+                        to choose difficulty, to step out of your comfort zone, and to become the best version
+                        of yourself. Every product in this collection carries this message of resilience and
+                        determination.
+                    </p>
+                    <div class="story-quote">
+                        <blockquote>
+                            "You don't know me, son. You don't know what I'm capable of."
+                        </blockquote>
+                        <cite>— David Goggins</cite>
+                    </div>
+                </div>
+                <div class="story-media">
+                    <div class="story-video">
+                        <video 
+                            id="storyVideo" 
+                            class="story-video-player"
+                            muted
+                            loop
+                            playsinline
+                            preload="auto">
+                            <source src="public/videos/video1.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <div class="container">
+            <h2 class="section-title">What the Community Says</h2>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Quality is incredible. Every time I wear this, I'm reminded to push harder."
+                    </p>
+                    <p class="review-author">— Marcus T.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"More than just merch, it's a statement. Stay Hard!"</p>
+                    <p class="review-author">— Sarah K.</p>
+                </div>
+                <div class="review-card">
+                    <div class="review-stars">★★★★★</div>
+                    <p class="review-text">"Best purchase I've made. The message resonates every single day."</p>
+                    <p class="review-author">— James R.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="container">
+            <h2 class="section-title">FAQ</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">What are the delivery times?</button>
+                    <div class="faq-answer">
+                        <p>Orders are typically shipped within 2-3 business days. Standard delivery takes 5-7 business
+                            days.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What sizes are available?</button>
+                    <div class="faq-answer">
+                        <p>All our products are available in sizes XS to 3XL. Check our size guide for more details.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">Can I return an item?</button>
+                    <div class="faq-answer">
+                        <p>Yes, we accept returns within 30 days. Items must be in new condition with their tags.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question">What is the quality of the products?</button>
+                    <div class="faq-answer">
+                        <p>All our products are made with premium materials and high-quality printing to ensure
+                            durability and comfort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Popup -->
+    <div class="newsletter-popup" id="newsletterPopup">
+        <div class="popup-content">
+            <button class="popup-close" id="popupClose">×</button>
+            <h3>Stay Hard. Stay Connected.</h3>
+            <p>Join our community and receive exclusives, daily motivation, and special offers.</p>
+            <form class="newsletter-form" id="newsletterForm">
+                <input type="email" placeholder="Your email" required>
+                <button type="submit" class="btn btn-primary">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Cart</h3>
+            <button class="cart-close" id="cartClose">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <p class="cart-empty">Your cart is empty</p>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">€0.00</span>
+            </div>
+            <button class="btn btn-primary btn-full" id="checkoutBtn">Checkout</button>
+        </div>
+    </div>
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <!-- Product Page Section -->
+    <section class="product-page" id="productPage" style="display: none;">
+        <div class="container">
+            <button class="back-link" id="backToProducts">← Back</button>
+            <div class="product-detail" id="productDetail">
+                <!-- Product content will be loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>GOGGINS</h4>
+                    <p>Merchandise Store</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Links</h4>
+                    <ul>
+                        <li><a href="#collections">Collections</a></li>
+                        <li><a href="#story">Story</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>support@goggins.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 David Goggins Store. Stay Hard.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Reveal body once CSS is loaded to prevent FOUC
+        (function() {
+            function revealBody() {
+                document.body.classList.add('css-loaded');
+            }
+            
+            // If CSS is already loaded
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', revealBody);
+            } else {
+                revealBody();
+            }
+        })();
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/3d.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

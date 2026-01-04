@@ -1,0 +1,511 @@
+/* ============================================
+   PRODUCT PAGE STYLES
+   ============================================ */
+
+.product-page {
+    min-height: 100vh;
+    padding-top: 100px;
+    padding-bottom: var(--spacing-xl);
+}
+
+.back-link {
+    display: inline-block;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-gray-light);
+    font-weight: 600;
+    transition: var(--transition-fast);
+}
+
+.back-link:hover {
+    color: var(--color-red);
+}
+
+.product-detail {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+    margin-top: var(--spacing-lg);
+}
+
+.product-gallery {
+    position: sticky;
+    top: 100px;
+    height: fit-content;
+}
+
+.product-main-image {
+    width: 100%;
+    height: 600px;
+    background: linear-gradient(135deg, var(--color-black) 0%, var(--color-gray-dark) 50%, rgba(220, 20, 60, 0.1) 100%);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: var(--spacing-md);
+    position: relative;
+    cursor: zoom-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style Corteiz pour "Stay Hard T-Shirt" sur la page produit - Fond noir + Glow */
+.product-main-image.stay-hard-product {
+    background: #000000 !important;
+    /* Fond noir pur */
+}
+
+.product-main-image.stay-hard-product img {
+    /* Glow style Corteiz - halo lumineux subtil autour du t-shirt */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.1)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.05));
+    /* Effet glow doux et progressif pour faire ressortir le t-shirt noir sur fond noir */
+}
+
+/* Style Corteiz pour "Uncommon Hoodie" sur la page produit - Fond noir + Glow */
+.product-main-image.uncommon-hoodie-product {
+    background: #000000 !important;
+    /* Fond noir pur */
+}
+
+.product-main-image.uncommon-hoodie-product img {
+    /* Glow style Corteiz - halo lumineux subtil autour du hoodie */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.1)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.05));
+    /* Effet glow doux et progressif pour faire ressortir le hoodie noir sur fond noir */
+}
+
+/* Style Corteiz pour "You Don't Know Me Son" sur la page produit - Fond noir + Glow */
+.product-main-image.you-dont-know-me-product {
+    background: #000000 !important;
+    /* Fond noir pur */
+}
+
+.product-main-image.you-dont-know-me-product img {
+    /* Glow style Corteiz - halo lumineux subtil autour du t-shirt */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.1)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.05));
+    /* Effet glow doux et progressif pour faire ressortir le t-shirt sur fond noir */
+}
+
+/* Style Corteiz pour "Uncommon Amongst The Uncommon Tee" sur la page produit - Fond noir + Glow */
+.product-main-image.uncommon-stamp-product {
+    background: #000000 !important;
+    /* Fond noir pur */
+}
+
+.product-main-image.uncommon-stamp-product img {
+    /* Glow style Corteiz - halo lumineux subtil autour du t-shirt */
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.1)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.05));
+    /* Effet glow doux et progressif pour faire ressortir le t-shirt sur fond noir */
+}
+
+/* Style Corteiz pour "Stay Hard Hoodie" sur la page produit - Fond noir + Glow */
+.product-main-image.stay-hard-hoodie-product {
+    background: #000000 !important;
+    /* Fond noir pur */
+}
+
+.product-main-image.stay-hard-hoodie-product img {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.1)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.05));
+}
+
+/* Style Corteiz pour "Women's OG Crop Hoodie" sur la page produit - Fond noir + Glow */
+.product-main-image.womens-og-crop-hoodie-product {
+    background: #000000 !important;
+    /* Fond noir pur */
+}
+
+.product-main-image.womens-og-crop-hoodie-product img {
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.2)) drop-shadow(0 0 30px rgba(255, 255, 255, 0.15)) drop-shadow(0 0 50px rgba(255, 255, 255, 0.1)) drop-shadow(0 0 80px rgba(255, 255, 255, 0.05));
+}
+
+.product-main-image img {
+    max-width: 85%;
+    max-height: 90%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    transition: var(--transition-slow);
+    border-radius: 5px;
+}
+
+.product-main-image:hover img {
+    transform: scale(1.1);
+}
+
+
+.product-details {
+    padding: var(--spacing-md);
+}
+
+.product-name {
+    font-family: var(--font-display);
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.product-price-large {
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: var(--color-red);
+    margin-bottom: var(--spacing-md);
+}
+
+.product-description-large {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: var(--color-gray-light);
+    margin-bottom: var(--spacing-lg);
+}
+
+.product-options {
+    margin-bottom: var(--spacing-lg);
+}
+
+.option-group {
+    margin-bottom: var(--spacing-md);
+}
+
+.option-group label {
+    display: block;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+
+.size-selector {
+    display: flex;
+    gap: var(--spacing-sm);
+    flex-wrap: wrap;
+}
+
+.size-btn {
+    padding: 0.8rem 1.5rem;
+    background: var(--color-gray-dark);
+    color: var(--color-white);
+    border: 2px solid var(--color-gray);
+    border-radius: 5px;
+    font-weight: 700;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.size-btn:hover {
+    border-color: var(--color-red);
+}
+
+.size-btn.active {
+    background: var(--color-red);
+    border-color: var(--color-red);
+    color: var(--color-white);
+}
+
+.color-selector {
+    display: flex;
+    gap: var(--spacing-sm);
+}
+
+.color-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    cursor: pointer;
+    transition: var(--transition-fast);
+}
+
+.color-btn:hover {
+    transform: scale(1.1);
+}
+
+.color-btn.active {
+    border-color: var(--color-white);
+    box-shadow: 0 0 0 2px var(--color-red);
+}
+
+.btn-large {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+    width: 100%;
+    margin-bottom: var(--spacing-lg);
+}
+
+.product-features {
+    background: var(--color-gray-dark);
+    padding: var(--spacing-md);
+    border-radius: 10px;
+    margin-top: var(--spacing-lg);
+}
+
+.product-features h3 {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+}
+
+.product-features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.product-features li {
+    padding: var(--spacing-xs) 0;
+    color: var(--color-gray-light);
+    font-size: 1rem;
+}
+
+.cart-item-quantity {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    margin: var(--spacing-xs) 0;
+}
+
+.cart-item-quantity button {
+    width: 30px;
+    height: 30px;
+    background: var(--color-gray);
+    color: var(--color-white);
+    border-radius: 5px;
+    font-weight: 700;
+    transition: var(--transition-fast);
+}
+
+.cart-item-quantity button:hover {
+    background: var(--color-red);
+}
+
+.cart-item-quantity span {
+    min-width: 30px;
+    text-align: center;
+    font-weight: 700;
+}
+
+@media (max-width: 968px) {
+    .product-detail {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-sm);
+    }
+
+    .product-gallery {
+        position: static;
+        margin-bottom: var(--spacing-sm);
+    }
+
+    .product-main-image {
+        height: 400px;
+        margin-bottom: var(--spacing-sm);
+    }
+    
+    /* Glow effect is kept on product page (after click) for mobile */
+    
+    .product-details {
+        padding: var(--spacing-sm) var(--spacing-sm) var(--spacing-md);
+    }
+    
+    /* Mobile: Hiérarchie optimisée - Nom du produit */
+    .product-name {
+        font-size: clamp(1.8rem, 6vw, 2.5rem);
+        margin-bottom: var(--spacing-xs);
+        line-height: 1.2;
+    }
+    
+    /* Mobile: Prix - Plus visible et proche du nom */
+    .product-price-large {
+        font-size: 2rem;
+        font-weight: 900;
+        color: var(--color-red);
+        margin-bottom: var(--spacing-md);
+        letter-spacing: 1px;
+    }
+    
+    /* Mobile: Options groupées avec espacement réduit */
+    .product-options {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .option-group {
+        margin-bottom: var(--spacing-md);
+    }
+    
+    .option-group label {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+        color: var(--color-white);
+        font-weight: 700;
+    }
+    
+    /* Mobile: Boutons de tailles - Plus grands et plus visibles */
+    .size-selector {
+        gap: 0.75rem;
+    }
+    
+    .size-btn {
+        padding: 0.85rem 1rem;
+        min-width: 54px;
+        min-height: 46px;
+        background: var(--color-gray-dark);
+        color: var(--color-white);
+        border: 2px solid var(--color-gray);
+        border-radius: 8px;
+        font-weight: 700;
+        font-size: 0.95rem;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .size-btn:active {
+        transform: scale(0.95);
+    }
+    
+    .size-btn.active {
+        background: var(--color-red);
+        border-color: var(--color-red);
+        color: var(--color-white);
+        box-shadow: 0 0 0 3px rgba(220, 20, 60, 0.3),
+                    0 4px 12px rgba(220, 20, 60, 0.4);
+        transform: scale(1.02);
+    }
+    
+    /* Mobile: Sélecteur de couleurs - Plus visible */
+    .color-selector {
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
+    
+    .color-btn {
+        width: 50px;
+        height: 50px;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 50%;
+        border: 3px solid transparent;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        position: relative;
+        -webkit-tap-highlight-color: transparent;
+    }
+    
+    .color-btn:active {
+        transform: scale(0.9);
+    }
+    
+    .color-btn.active {
+        border-color: var(--color-white);
+        box-shadow: 0 0 0 3px var(--color-red),
+                    0 0 0 5px rgba(220, 20, 60, 0.3),
+                    0 4px 12px rgba(220, 20, 60, 0.4);
+        transform: scale(1.1);
+    }
+    
+    /* Indicateur visuel pour couleur active */
+    .color-btn.active::after {
+        content: '✓';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--color-white);
+        font-size: 1.1rem;
+        font-weight: 900;
+        text-shadow: 0 0 4px rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Mobile: Bouton Add to Cart - Ultra dominant */
+    .add-to-cart-detail {
+        border-radius: 12px;
+        padding: 1.6rem 2rem;
+        font-size: 1.1rem;
+        font-weight: 900;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        width: 100%;
+        background: var(--color-red);
+        color: var(--color-white);
+        border: none;
+        box-shadow: 0 6px 24px rgba(220, 20, 60, 0.5),
+                    0 0 0 0 rgba(220, 20, 60, 0.7);
+        transition: all 0.3s ease;
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .add-to-cart-detail::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+        transition: left 0.5s ease;
+    }
+    
+    .add-to-cart-detail:hover::before {
+        left: 100%;
+    }
+    
+    .add-to-cart-detail:active {
+        transform: scale(0.97);
+        box-shadow: 0 3px 12px rgba(220, 20, 60, 0.4);
+    }
+    
+    /* Mobile: Description - Amélioration lisibilité */
+    .product-description-large {
+        margin-top: var(--spacing-md);
+        margin-bottom: var(--spacing-md);
+        font-size: 1rem;
+        line-height: 1.7;
+        color: var(--color-gray-light);
+    }
+    
+    /* Mobile: Features - Plus lisible et proche */
+    .product-features {
+        background: var(--color-gray-dark);
+        padding: var(--spacing-md);
+        border-radius: 12px;
+        margin-top: var(--spacing-md);
+        border: 1px solid rgba(220, 20, 60, 0.2);
+    }
+    
+    .product-features h3 {
+        font-family: var(--font-display);
+        font-size: 1.3rem;
+        margin-bottom: var(--spacing-sm);
+        text-transform: uppercase;
+        color: var(--color-white);
+    }
+    
+    .product-features ul {
+        list-style: none;
+        padding: 0;
+    }
+    
+    .product-features li {
+        padding: 0.75rem 0;
+        color: var(--color-gray-light);
+        font-size: 0.95rem;
+        line-height: 1.6;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    }
+    
+    .product-features li:last-child {
+        border-bottom: none;
+    }
+    
+    /* Mobile: Réduction padding général */
+    .product-page {
+        padding-top: 80px;
+        padding-bottom: var(--spacing-md);
+    }
+    
+    .back-link {
+        margin-bottom: var(--spacing-sm);
+        font-size: 0.9rem;
+    }
+}

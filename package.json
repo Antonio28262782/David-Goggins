@@ -1,0 +1,23 @@
+{
+  "name": "david-goggins-store",
+  "version": "1.0.0",
+  "description": "Site e-commerce David Goggins - Merchandise premium",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo '🚀 Starting server (build version)...' && echo '📍 Server will be available at: http://localhost:3000' && echo '' && npx serve dist",
+    "dev": "echo '🚀 Starting development server...' && echo '📍 Server available at: http://localhost:8000' && echo '' && npx live-server --port=8000",
+    "preview": "echo '🚀 Starting preview server (build version)...' && echo '📍 Server will be available at: http://localhost:3000' && echo '' && npx serve dist",
+    "build": "mkdir -p dist && cp -r index.html css js assets public dist/ && echo '✅ Build completed! Files copied to dist/ folder.'"
+  },
+  "keywords": [
+    "e-commerce",
+    "david-goggins",
+    "merchandise",
+    "store"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {},
+  "dependencies": {}
+}
+
